@@ -1,0 +1,111 @@
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(225, 225, 225);
+  padding: 50px;
+  height: 400px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgb(243, 243, 243)
+    ),
+    url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=5");
+  background-size: cover;
+  margin-bottom: -100px;
+}
+
+.header h1 {
+  font-size: 100px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+
+button {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  outline: 0;
+  transition: background 400ms;
+}
+
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: rgba(248, 248, 248, 0.7);
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+body {
+  background-color: rgb(243, 243, 243);
+}
+
+.counterBox {
+  display: flex;
+  align-items: center;
+}
+
+.counterBox h2 {
+  font-size: 70px;
+}
+
+.counterButton {
+  border-radius: 500px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(66, 66, 66);
+  color: white;
+  margin: 20px;
+}
+
+#resetButton {
+  border: none;
+  border-radius: 500px;
+  background-color: rgb(66, 66, 66);
+  color: white;
+  padding: 10px 20px;
+}
+
+.formInput {
+  display: flex;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  width: 100%;
+  border-radius: 100px;
+  background-color: white;
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.formInput input {
+  width: 100%;
+  border-radius: 100px;
+  border: none;
+  padding-left: 20px;
+}
+
+.formInput button {
+  border-radius: 100px;
+  background-color: rgb(66, 66, 66);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  width: 130px;
+}
